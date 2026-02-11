@@ -2,7 +2,7 @@
 
 Aplicação desktop desenvolvida em **Python** com **PySide6** para controle de gastos e receitas, utilizando uma interface em formato de planilha (grid editável), com resumo automático e exportação de dados.
 
-Este projeto é um **MVP funcional e evolutivo**, pensado para receber melhorias contínuas conforme o uso real, ainda não esta terminado sera implementado melhoras e testes em uso vou atualizar layouts e funcionalidades futuramente.
+Este projeto é um **MVP funcional e evolutivo**, pensado para receber melhorias contínuas conforme o uso real, ainda não esta concluido, sera implementado melhorias e testes em uso vou atualizar layouts e funcionalidades futuramente.
 
 ---
 
@@ -50,7 +50,8 @@ Este projeto é um **MVP funcional e evolutivo**, pensado para receber melhorias
 ---
 
 ## ▶️ Como executar o projeto (Windows / PowerShell)
-```powershell, quando projeto estiver concluido ele sera um executavel semelhante ao execel.
+OBS: Quando projeto estiver concluido ele sera iniciado como um programa do windows, mas por enquanto suegue iniciando assim:
+```powershell, 
 cd expense_mvp
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
