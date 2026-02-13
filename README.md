@@ -1,59 +1,133 @@
-# Expense Control Grid
+# 💰 Expense Control Dashboard
 
-Aplicação desktop desenvolvida em **Python** com **PySide6** para controle de gastos e receitas, utilizando uma interface em formato de planilha (grid editável), com resumo automático e exportação de dados.
+Sistema desktop para controle financeiro mensal com dashboard analítico integrado.
 
-Este projeto é um **MVP funcional e evolutivo**, pensado para receber melhorias contínuas conforme o uso real, ainda não esta concluido, sera implementado melhorias e testes em uso vou atualizar layouts e funcionalidades futuramente.
-
----
-
-## 📌 Funcionalidades
-- Interface em **grid editável** (estilo planilha)
-- Tipos de lançamento: **Entrada / Saída**
-- Categorias em lista (inclui **Salário** e **Vendas**)
-- Filtro por mês ou visualização geral
-- Resumo automático:
-  - Entradas
-  - Saídas
-  - Saldo (lucro/prejuízo)
-- Botão **+ Nova linha**
-- Botão **Excluir linha selecionada**
-- Atalho de teclado (**DEL**) para exclusão
-- Exportação de dados para **CSV**
-- Tema moderno em azul, com:
-  - Entradas destacadas em verde
-  - Saídas destacadas em vermelho
+Aplicação desenvolvida em **Python + PySide6 + Matplotlib + SQLite**, com foco em:
+- Visualização estratégica de dados
+- Interface moderna (dark mode)
+- Estrutura modular e escalável
+- Projeto pronto para evoluir (MVP + melhorias futuras)
 
 ---
 
-## 🖥️ Screenshots
+## 📊 Sobre o Projeto
 
-### Tela principal
-<img width="1366" height="725" alt="image" src="https://github.com/user-attachments/assets/0e330b61-52f4-4a16-ada3-f3078ce7a3a9" />
+O **Expense Control Dashboard** é um sistema de controle financeiro pessoal que permite:
 
+- Registro de **Entradas** e **Saídas**
+- Classificação por **categoria**
+- Separação de origem (**Salário** / **Vendas**)
+- Acompanhamento do **saldo ao longo do mês**
+- Análise visual de **despesas por categoria**
+- **Termômetro financeiro** (percentual de comprometimento)
+- Exportação dos dados para **CSV**
 
-### Grid de lançamentos
-<img width="1366" height="492" alt="image" src="https://github.com/user-attachments/assets/b90ed01b-342f-4546-8f8f-3d687e46fd3d" />
+Tudo em **uma única tela**, com:
+- Dashboard superior (indicadores principais)
+- Área de gráficos analíticos
+- Tabela de lançamentos editável
 
+- <img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/21e01cbc-10bc-4074-94e0-07560d5b0b42" />
 
-
-### Resumo e visualização
-<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/8394667f-fd01-473e-876e-52e458abbe05" />
 
 ---
 
-## 🧰 Tecnologias utilizadas
+## 🖥️ Interface do Sistema
+
+### 🔹 Dashboard Superior
+- Entradas do mês  
+- Saídas do mês  
+- Saldo / Lucro  
+- Termômetro financeiro (% de gasto)
+
+📷 <img width="1366" height="190" alt="image" src="https://github.com/user-attachments/assets/2d942c4b-1b0b-48b9-8bef-5a00c25e19cc" />
+
+
+### 🔹 Gráficos Analíticos
+- Saídas por categoria
+- Entradas: Salário x Vendas
+- Evolução do saldo ao longo do mês
+
+📷 <img width="1366" height="216" alt="image" src="https://github.com/user-attachments/assets/4c2ebfbb-3087-4c6f-ac90-23a6e3c5ad1c" />
+
+
+### 🔹 Lançamentos Financeiros
+- Edição direta na tabela
+- Entrada destacada em **verde**
+- Saída destacada em **vermelho**
+- Exclusão com tecla **DEL**
+- Atualização automática do dashboard
+
+📷 <img width="1361" height="296" alt="image" src="https://github.com/user-attachments/assets/676aab01-0796-4c4c-ab78-313f293da21b" />
+
+
+---
+
+## 🧠 Termômetro Financeiro
+
+Indicador visual baseado na relação:
+
+Classificação automática:
+- 🟢 Controlado  
+- 🟡 Atenção  
+- 🔴 Crítico  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
 - Python 3
 - PySide6 (Qt)
-- SQLite (persistência local)
-- Git
+- Matplotlib
+- SQLite
 
 ---
 
-## ▶️ Como executar o projeto (Windows / PowerShell)
-OBS: Quando projeto estiver concluido ele sera iniciado como um programa do windows, mas por enquanto suegue iniciando assim:
-```powershell, 
-cd expense_mvp
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
+## 📁 Estrutura do Projeto
+
+### expense-control-dashboard/
+│
+├── app.py          # Controlador principal
+├── ui_main.py      # Interface e dashboard
+├── db.py           # Conexão e consultas SQLite
+├── utils.py        # Funções auxiliares
+├── requirements.txt
+└── README.md 
+## ✅ Funcionalidades Implementadas
+ - Dashboard financeiro completo
+ - Indicadores (Entradas, Saídas, Saldo)
+ - Termômetro financeiro (gauge)
+ - Gráficos dinâmicos (categoria / salário vs vendas / evolução)
+ - Banco SQLite
+ - Edição direta na tabela
+ - Cores por tipo (IN/OUT)
+ - Exportação para CSV
+
+---
+
+## 🔮 Melhorias Futuras
+
+- Filtros avançados por conta
+- Metas financeiras mensais
+- Exportação PDF
+- Versão executável (.exe)
+- Modo multiusuário
+
+---
+
+## 🎯 Objetivo do Projeto
+Projeto desenvolvido para demonstrar competências em:
+- Desenvolvimento de aplicações desktop
+- Persistência de dados (SQLite)
+- Visualização e análise com gráficos
+- Organização e evolução incremental (MVP)
+
+## 👤 Autor
+
+LuiggyARC
+📍 Manaus – AM
+🎯 Foco em Análise de Dados, Automação e Inteligência Digital
+
+GitHub: https://github.com/LuiggyARC
+
+
